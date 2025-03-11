@@ -1,2 +1,6 @@
 # bvcmap
-Bivariate colormap generation in Python
+
+Bivariate colormap generation in Python.
+
+
+

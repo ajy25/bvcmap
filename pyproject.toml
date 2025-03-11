@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[project]
+name = "bvcmap"
+version = "0.1.0-alpha.1"
+description = "Bivariate colormap generation in Python"
+authors = [
+    {name = "Andrew Yang", email = "andrew_j_yang@brown.edu"},
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "xycmap==1.0.1"
+]
+license = {file = "LICENSE"}
+keywords = ["data science", "data visualization"]
+classifiers = [
+    "Programming Language :: Python"
+]
+
+[project.urls]
+Homepage = "https://bvcmap.readthedocs.io/"
+
+
+[tool.hatch.metadata]
+packages = [
+    {include = "bvcmap"}
+]
