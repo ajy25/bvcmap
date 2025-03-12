@@ -332,7 +332,9 @@ def bivariate_legend(
                 except ImportError:
                     raise ImportError("jenkspy library is required for fisher method")
                 xbins = np.array(
-                    jenkspy.jenks_breaks(data_x.dropna().values, nb_class=cmap.shape[1])
+                    jenkspy.jenks_breaks(
+                        data_x.dropna().values, n_classes=cmap.shape[1]
+                    )
                 )
             else:
                 raise ValueError(f"Unknown x_method: {x_method}")
@@ -363,7 +365,9 @@ def bivariate_legend(
                 except ImportError:
                     raise ImportError("jenkspy library is required for fisher method")
                 ybins = np.array(
-                    jenkspy.jenks_breaks(data_y.dropna().values, nb_class=cmap.shape[0])
+                    jenkspy.jenks_breaks(
+                        data_y.dropna().values, n_classes=cmap.shape[0]
+                    )
                 )
             else:
                 raise ValueError(f"Unknown y_method: {y_method}")
