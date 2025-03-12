@@ -5,4 +5,7 @@ __all__ = [
     "BivariateCmap",
     "MPLColor",
     "scatterplot",
+    "legend",
 ]
+
+__version__ = "0.1.0a1"

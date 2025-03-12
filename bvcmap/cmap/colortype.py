@@ -5,7 +5,10 @@ class MPLColor:
     """A class to represent and validate Matplotlib colors."""
 
     def __init__(self, color):
-        self.color = self._validate_color(color)
+        if isinstance(color, MPLColor):
+            self.color = color.color
+        else:
+            self.color = self._validate_color(color)
 
     def _validate_color(self, color):
         """Validate and convert color to RGBA format."""

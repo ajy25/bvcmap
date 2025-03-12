@@ -1,3 +1,3 @@
-from .scatter import scatterplot, legend
+from .functions import scatterplot, legend
 
 __all__ = ["scatterplot", "legend"]
